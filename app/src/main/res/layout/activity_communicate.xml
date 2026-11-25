@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Large Integer Arithmetic"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="16dp" />
+
+    <EditText
+        android:id="@+id/edit_operation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Operation (divide, swap-end-mult, rev-add)"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/edit_num1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="First number"
+        android:inputType="numberSigned" />
+
+    <EditText
+        android:id="@+id/edit_num2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Second number"
+        android:inputType="numberSigned" />
+
+    <Button
+        android:id="@+id/button_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Calculate"
+        android:onClick="sendQuestion" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="16dp" />
+
+    <TextView
+        android:id="@+id/text_answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Result will appear here."
+        android:textSize="16sp" />
+
+</LinearLayout>
